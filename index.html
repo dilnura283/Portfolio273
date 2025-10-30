@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dilnura Davlatova</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      /* Barcha elementlarga quyidagi uslublarni qo‘llaymiz */
+      * {
+        box-sizing: border-box; /* Padding va border element o‘lchamiga qo‘shilmaydi */
+        padding: 0; /* Ichki bo‘shliqni olib tashlaymiz */
+        margin: 0; /* Tashqi bo‘shliqni olib tashlaymiz */
+        font-family: sans-serif; /* Matnga zamonaviy shrift beramiz */
+      }
+
+      /* Asosiy sahifa (body) uchun uslublar */
+      body {
+        background: #252323; /* Yorug‘ kulrang fon rangi */
+        display: flex; /* Markazga joylashtirish uchun flexbox */
+        justify-content: center; /* Gorizontal markazlash */
+        align-items: center; /* Vertikal markazlash */
+        min-height: 100vh; /* Ekran balandligi bo‘yicha 100% */
+      }
+
+      /* Jamoa kartasi uchun konteyner */
+      .team-card {
+        background: #fff; /* Oq fon */
+        border-radius: 16px; /* Burchaklarni yumaloqlashtirish */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Yengil soyali effekt */
+        padding: 34px; /* Ichki bo‘shliq */
+        text-align: center; /* Matnni markazga joylash */
+        width: 280px; /* Karta eni */
+      }
+
+      /* Profil rasmi */
+      .team-card img {
+        width: 150px; /* Rasm eni */
+        height: 150px; /* Rasm balandligi */
+        border-radius: 50%; /* Rasmni doira shaklida qilish */
+        object-fit: cover; /* Rasm to‘liq sig‘ishiga yordam beradi */
+        margin-bottom: 16px; /* Pastki bo‘shliq */
+      }
+
+      /* Foydalanuvchi ismi */
+      .team-card h3 {
+        font-size: 20px; /* Matn o‘lchami */
+        font-weight: 600; /* Qalinlik */
+        margin-bottom: 8px; /* Pastki bo‘shliq */
+      }
+
+      /* Foydalanuvchi lavozimi */
+      .team-card p {
+        color: #666; /* Kulrang matn rangi */
+        font-size: 14px; /* Matn o‘lchami */
+        margin-bottom: 16px; /* Pastki bo‘shliq */
+      }
+
+      /* Ijtimoiy tarmoqlar iconlari konteyneri */
+      .social-icons {
+        display: flex; /* Iconlarni yonma-yon joylash */
+        justify-content: center; /* Gorizontal markazlash */
+        gap: 12px; /* Iconlar orasidagi bo‘shliq */
+      }
+
+      /* Ijtimoiy tarmoqlarga havolalar */
+      .social-icons a {
+        color: #333; /* Qoramtir kulrang */
+        text-decoration: none; /* Tagidagi chiziqni olib tashlaydi */
+        font-size: 18px; /* Icon o‘lchami */
+        transition: color 0.3s; /* Rang o‘zgarishini yumshoq qilish */
+      }
+
+      /* Havolaga sichqoncha borsa rangini o‘zgartirish */
+      .social-icons a:hover {
+        color: #007bff; /* Ko‘k rang (hover effekti) */
+      }
+    </style>
+  </head>
+  <body>
+    <canvas
+      id="tgme_background"
+      class="tgme_background default"
+      width="50"
+      height="50"
+      data-colors="dbddbb,6ba587,d5d88d,88b884"
+    ></canvas>
+
+    <div class="team-card">
+      <img src="image.png" alt="Profile Photo" />
+      <h3>Dilnura Davlatova</h3>
+      <p>Frontend Developer</p>
+
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/dilnura-davlatova-501925358/" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://www.facebook.com/share/1QT6a3FTgF/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/dilnura.782?igsh=MWV5eGRjNDN6dmtxbg=="
+          target="_blank"><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://github.com/dilnura283" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+    </div>
+  </body>
+</html>
